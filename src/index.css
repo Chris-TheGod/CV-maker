@@ -144,7 +144,7 @@ table {
   flex-direction: column;
   width: 30%;
   gap: 10px;
-  margin-left: 10px;
+  margin-left: 40px;
 }
 
 .submit-btn {
@@ -152,11 +152,16 @@ table {
   margin-left: auto;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 h1 {
   letter-spacing: 1px;
   font-size: 2rem;
   margin-block: 20px;
-  margin-left: 10px;
+  margin: auto;
 }
 
 h2 {
@@ -171,6 +176,11 @@ h2 {
 
 input {
   padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+input:focus {
   border: 1px solid rgb(248, 232, 143);
   border-radius: 3px;
 }
@@ -180,7 +190,7 @@ input {
   color: black;
   border: none;
   border-radius: 3px;
-  padding: 5px;
+  padding: 3px;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -189,4 +199,9 @@ input {
   background-color: rgb(250, 232, 124);
   transform: scale(1.05);
   transition: 0.3s;
+}
+
+.error {
+  color: rgb(242, 104, 104);
+  font-size: 0.85rem;
 }
