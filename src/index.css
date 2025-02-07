@@ -139,12 +139,35 @@ table {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   width: 30%;
   gap: 10px;
-  margin-left: 40px;
+}
+
+.preview {
+  background-color: white;
+  height: 700px;
+  width: 500px;
+  color: black;
+}
+
+.preview-basic-info {
+  margin: 10px;
 }
 
 .submit-btn {
@@ -152,16 +175,30 @@ table {
   margin-left: auto;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
+.preview-value {
+  color: black;
+  margin-bottom: 5px;
+}
+
+.preview-header {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-weight: 500;
+}
+
+.email,
+.phone {
+  font-size: 0.9rem;
 }
 
 h1 {
   letter-spacing: 1px;
   font-size: 2rem;
-  margin-block: 20px;
   margin: auto;
+  margin-top: 20px;
 }
 
 h2 {
